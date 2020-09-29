@@ -2,15 +2,52 @@
 My project thesis and P2Cstore paper
 
 ## Index:
-- [Structure](#project-structure)
 - [Configurations](#configurations)
 - [User Guide](#user-guide)
+- [Configure AWS S3](#configure-aws-s3)
+- [Configure GCP](#configure-gcp)
+- [Project Structure](#project-structure)
 - [Credits](#credits)
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
 
 P2Cstore works on Linux and macOS<br>
 If something doesn’t work, please [file an issue](https://github.com/MarceloFRSilva/Thesis/issues/new).<br>
+
+## Configurations
+
+To be able to connect to the network one has to have the inet ip enable on the machine.
+To achieve that perform the following steps:
+
+    $ sudo nano /etc/hosts
+    
+Once inside the file comment the line that has:
+
+    127.0.1.1   ...
+    
+By simple adding a #, as such:
+
+    #127.0.1.1   ...    
+
+* [Return to Index](#index)
+
+## User Guide
+
+To better understand how to use and interact with this software we created a wiki [User Guide](https://github.com/MarceloFRSilva/Thesis/wiki/P2Cstore-User-Guide) – How to use the P2Cstore and develop it.
+
+* [Return to Index](#index)
+
+## Configure AWS S3
+
+To configure AWS S3 buckets use the following tutorial: [AWS S3 Buckets set up tutorial](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/create-configure-bucket.html).
+
+* [Return to Index](#index)
+
+## Configure GCP
+
+To configure GCP storage buckets use the following tutorial: [GCP Storage Buckets set up tutorial](https://cloud.google.com/storage/docs/creating-buckets).
+
+* [Return to Index](#index)
 
 ## Project Structure
 
@@ -171,34 +208,6 @@ p2cstore
 
 * [Return to Index](#index)
 
-## Configurations
-
-To be able to connect to the network one has to have the inet ip enable on the machine.
-To achieve that perform the following steps:
-
-    $ sudo nano /etc/hosts
-    
-Once inside the file comment the line that has:
-
-    127.0.1.1   ...
-    
-By simple adding a #, as such:
-
-    #127.0.1.1   ...    
-
-* [Return to Index](#index)
-
-## User Guide
-
-To better understand how to use and interact with this software we created a wiki [User Guide](https://github.com/MarceloFRSilva/Thesis/wiki/P2Cstore-User-Guide) – How to use the P2Cstore and develop it.
-
-* [Return to Index](#index)
-
-## Configure AWS S3
-
-To configure AWS S3 buckets use the following tutorial: [AWS S3 Buckets set up tutorial](https://github.com/MarceloFRSilva/Thesis/wiki/P2Cstore-User-Guide).
-
-* [Return to Index](#index)
 
 ## Credits
 
