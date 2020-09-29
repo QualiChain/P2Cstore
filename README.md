@@ -18,7 +18,6 @@ The present project as the following struture:
 
 ```
 p2cstore
-├── Evaluation
 ├── README.md
 └── storage-system-blockchain
     ├── bss-client
@@ -148,12 +147,10 @@ p2cstore
     │   │                       ├── PropertiesUtilitites.java
     │   │                       ├── ScheduledPoS.java
     │   │                       └── StorageUtilities.java
-    │   ├── ola
     │   ├── pom.xml
     │   ├── Resources
     │   │   ├── authorizedPeers.properties
-    │   │   ├── config.properties
-    │   │   └── thesis-marcelo-jclouds-10af72bc9650.json
+    │   │   └── config.properties
     │   └── test
     │       └── java
     │           └── com
