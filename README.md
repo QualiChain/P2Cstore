@@ -211,8 +211,8 @@ p2cstore
 
 ## Credits
 
-This project exists thanks to all the people who [contribute](CONTRIBUTING.md).<br>
-<a href="https://github.com/MarceloFRSilva/Thesis/graphs/contributors"></a>
+This project exists thanks to all the people who [contribute]<br>
+<a href="https://github.com/QualiChain/P2Cstore/graphs/contributors"></a>
 
 * [Return to Index](#index)
 
