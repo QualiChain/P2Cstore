@@ -12,7 +12,7 @@ My project thesis and P2Cstore paper
 - [License](#license)
 
 P2Cstore works on Linux and macOS<br>
-If something doesn’t work, please [file an issue](https://github.com/MarceloFRSilva/Thesis/issues/new).<br>
+If something doesn’t work, please [file an issue](https://github.com/QualiChain/P2Cstore/issues/new).<br>
 
 ## Configurations
 
