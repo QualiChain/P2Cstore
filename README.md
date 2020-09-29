@@ -211,7 +211,9 @@ p2cstore
 
 ## Credits
 
-This project exists thanks to all the people who [contribute](https://github.com/QualiChain/P2Cstore/graphs/contributors)<br>
+This work was initially developed in the scope of the master's thesis of [@MarceloFRSilva](https://github.com/MarceloFRSilva).
+
+The continuous development of this project is what makes it alive and it is only  possible due to all the people who [contribute](https://github.com/QualiChain/P2Cstore/graphs/contributors)<br>
 
 * [Return to Index](#index)
 
