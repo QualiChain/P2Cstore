@@ -33,7 +33,7 @@ By simple adding a #, as such:
 
 ## User Guide
 
-To better understand how to use and interact with this software we created a wiki [User Guide](https://github.com/MarceloFRSilva/Thesis/wiki/P2Cstore-User-Guide) – How to use the P2Cstore and develop it.
+To better understand how to use and interact with this software we created a wiki [User Guide](https://github.com/QualiChain/P2Cstore/blob/master/User-Guide-P2Cstore.md) – How to use the P2Cstore.
 
 * [Return to Index](#index)
 
