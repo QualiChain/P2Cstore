@@ -211,8 +211,7 @@ p2cstore
 
 ## Credits
 
-This project exists thanks to all the people who [contribute]<br>
-<a href="https://github.com/QualiChain/P2Cstore/graphs/contributors"></a>
+This project exists thanks to all the people who [contribute](https://github.com/QualiChain/P2Cstore/graphs/contributors)<br>
 
 * [Return to Index](#index)
 
