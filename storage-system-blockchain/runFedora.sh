@@ -15,6 +15,8 @@ if [ "$1" == "--bssNode" ]; then
         fi
 elif [ "$1" == "--install" ]; then
   mvn clean install
+elif [ "$1" == "--clean" ]; then
+  mvn clean  
 elif [ "$1" == "--vagrantUp" ]; then
   cd Auxiliars/VagrantInfo
   vagrant up
