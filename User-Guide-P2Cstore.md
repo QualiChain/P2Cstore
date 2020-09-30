@@ -1,83 +1,173 @@
-# Welcome to the User Guide of P2Cstore.
+# Welcome to the Auxiliar P2Cstore Setup and Run
 
-## Quick overview
+## Configure AWS S3
 
-### It is important to first know and understand which are the system participants:
+To configure AWS S3 buckets use the following tutorial: [AWS S3 Buckets set up tutorial](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/create-configure-bucket.html).
 
-* **The Storage peers** - Nodes that store content from other nodes and participate in the routing algorithm. Storage peers can perform all the operations on the system.
-* **The Readers** - Nodes that do not store content from other nodes nor have to give storage space to the system. This type of participant can only read from the system.
-* **Cloud providers** - Comercial cloud providers like AWS and GCP.
+* [Return to Index](#index)
 
-### Now we will describe what are the main operations available:
+## Configure GCP
 
-* **Add operation** - Storage peers can add content to the system using this operation.
-* **Get operation** - Storage peers and Readers can read content from the system using this operation.
-* **Delete operation** - Storage peers can delete content from the system using this operation.
-* **Update operation** - Storage peers can update content from the system using this operation.
+To configure GCP storage buckets use the following tutorial: [GCP Storage Buckets set up tutorial](https://cloud.google.com/storage/docs/creating-buckets).
 
-There are also a few auxiliary operations available, below we will describe how to find them.
+* [Return to Index](#index)
 
-## How to compile the code
+## Project Structure
 
-As previously stated the present demonstration is for Linux computers, namely Ubuntu-based Linux and Fedora-based Linux.
+The present project as the following struture:
 
-The examples provided are for these operating systems because the code was developed in a Ubuntu-based environment and it was tested on a Fedora-based environment.
+```
+p2cstore
+├── README.md
+└── storage-system-blockchain
+    ├── bss-client
+    │   ├── dependency-reduced-pom.xml
+    │   ├── lib
+    │   │   ├── gson-2.8.6.jar
+    │   │   ├── hamcrest-core-1.3.jar
+    │   │   ├── java-multibase-v1.0.1.jar
+    │   │   ├── java-multihash-1.2.1.jar
+    │   │   └── junit-4.13.jar
+    │   ├── main
+    │   │   └── java
+    │   │       └── com
+    │   │           └── thesis
+    │   │               └── inesc
+    │   │                   ├── BSSConfig.java
+    │   │                   ├── BssUser.java
+    │   │                   ├── Client.java
+    │   │                   ├── ClientMain.java
+    │   │                   ├── CloudStorage
+    │   │                   │   ├── CloudBlobContext.java
+    │   │                   │   └── CloudConnectivity.java
+    │   │                   ├── Commands
+    │   │                   │   ├── AddCommand.java
+    │   │                   │   ├── CommandContent.java
+    │   │                   │   ├── Command.java
+    │   │                   │   ├── DeleteCommand.java
+    │   │                   │   ├── GetCommand.java
+    │   │                   │   ├── GetSharedCommand.java
+    │   │                   │   └── UpdateCommand.java
+    │   │                   ├── CommunicationHandler.java
+    │   │                   ├── Communication.java
+    │   │                   ├── DHTAdapted.java
+    │   │                   ├── Display.java
+    │   │                   ├── Exceptions
+    │   │                   │   ├── CouldNotConnectToBootstrapNodeException.java
+    │   │                   │   ├── CouldNotReadLineException.java
+    │   │                   │   ├── DHTFailureException.java
+    │   │                   │   ├── NoSuchFileFoundException.java
+    │   │                   │   └── WrongInputException.java
+    │   │                   ├── kademliadht
+    │   │                   │   ├── DefaultConfiguration.java
+    │   │                   │   ├── dht
+    │   │                   │   │   ├── DHT.java
+    │   │                   │   │   ├── GetParameter.java
+    │   │                   │   │   ├── JKademliaStorageEntry.java
+    │   │                   │   │   ├── KadContent.java
+    │   │                   │   │   ├── KademliaDHT.java
+    │   │                   │   │   ├── KademliaStorageEntry.java
+    │   │                   │   │   ├── KademliaStorageEntryMetadata.java
+    │   │                   │   │   ├── StorageEntryMetadata.java
+    │   │                   │   │   └── StoredContentManager.java
+    │   │                   │   ├── exceptions
+    │   │                   │   │   ├── ContentExistException.java
+    │   │                   │   │   ├── ContentNotFoundException.java
+    │   │                   │   │   ├── KadServerDownException.java
+    │   │                   │   │   ├── RoutingException.java
+    │   │                   │   │   └── UnknownMessageException.java
+    │   │                   │   ├── JKademliaNode.java
+    │   │                   │   ├── KadConfiguration.java
+    │   │                   │   ├── KademliaNode.java
+    │   │                   │   ├── KadServer.java
+    │   │                   │   ├── KadStatistician.java
+    │   │                   │   ├── message
+    │   │                   │   │   ├── AcknowledgeMessage.java
+    │   │                   │   │   ├── ConnectMessage.java
+    │   │                   │   │   ├── ConnectReceiver.java
+    │   │                   │   │   ├── ContentLookupMessage.java
+    │   │                   │   │   ├── ContentLookupReceiver.java
+    │   │                   │   │   ├── ContentMessage.java
+    │   │                   │   │   ├── DeleteContentMessage.java
+    │   │                   │   │   ├── DeleteContentReceiver.java
+    │   │                   │   │   ├── KademliaMessageFactory.java
+    │   │                   │   │   ├── MessageFactory.java
+    │   │                   │   │   ├── Message.java
+    │   │                   │   │   ├── NodeLookupMessage.java
+    │   │                   │   │   ├── NodeLookupReceiver.java
+    │   │                   │   │   ├── NodeReplyMessage.java
+    │   │                   │   │   ├── Receiver.java
+    │   │                   │   │   ├── SimpleMessage.java
+    │   │                   │   │   ├── SimpleReceiver.java
+    │   │                   │   │   ├── StoreContentMessage.java
+    │   │                   │   │   ├── StoreContentReceiver.java
+    │   │                   │   │   └── Streamable.java
+    │   │                   │   ├── node
+    │   │                   │   │   ├── KademliaId.java
+    │   │                   │   │   ├── KeyComparator.java
+    │   │                   │   │   └── Node.java
+    │   │                   │   ├── operation
+    │   │                   │   │   ├── BucketRefreshOperation.java
+    │   │                   │   │   ├── ConnectOperation.java
+    │   │                   │   │   ├── ContentLookupOperation.java
+    │   │                   │   │   ├── ContentRefreshOperation.java
+    │   │                   │   │   ├── DeleteOperation.java
+    │   │                   │   │   ├── KadRefreshOperation.java
+    │   │                   │   │   ├── NodeLookupOperation.java
+    │   │                   │   │   ├── Operation.java
+    │   │                   │   │   ├── PingOperation.java
+    │   │                   │   │   └── StoreOperation.java
+    │   │                   │   ├── routing
+    │   │                   │   │   ├── Contact.java
+    │   │                   │   │   ├── ContactLastSeenComparator.java
+    │   │                   │   │   ├── JKademliaBucket.java
+    │   │                   │   │   ├── JKademliaRoutingTable.java
+    │   │                   │   │   ├── KademliaBucket.java
+    │   │                   │   │   └── KademliaRoutingTable.java
+    │   │                   │   ├── Statistician.java
+    │   │                   │   └── util
+    │   │                   │       ├── HashCalculator.java
+    │   │                   │       ├── RouteLengthChecker.java
+    │   │                   │       └── serializer
+    │   │                   │           ├── JsonDHTSerializer.java
+    │   │                   │           ├── JsonRoutingTableSerializer.java
+    │   │                   │           ├── JsonSerializer.java
+    │   │                   │           └── KadSerializer.java
+    │   │                   ├── NodeComputer.java
+    │   │                   ├── SaveNodeState.java
+    │   │                   ├── StorageValues.java
+    │   │                   ├── Terminal.java
+    │   │                   ├── TerminalOptions.java
+    │   │                   └── Utilities
+    │   │                       ├── DHTUtilities.java
+    │   │                       ├── FilesUtilities.java
+    │   │                       ├── HashFunction.java
+    │   │                       ├── PoSChallenge.java
+    │   │                       ├── PoSUtilities.java
+    │   │                       ├── PropertiesUtilitites.java
+    │   │                       ├── ScheduledPoS.java
+    │   │                       └── StorageUtilities.java
+    │   ├── pom.xml
+    │   ├── Resources
+    │   │   ├── authorizedPeers.properties
+    │   │   └── config.properties
+    │   └── test
+    │       └── java
+    │           └── com
+    │               └── thesis
+    │                   └── inesc
+    │                       ├── CreateBootstrapNodeClientTest.java
+    │                       └── UtilitiesTests
+    │                           ├── GetFileDataTest.java
+    │                           ├── GetFileHashTest.java
+    │                           ├── GetFileInputstreamTest.java
+    │                           ├── TrimTest.java
+    │                           └── VerifyIfFileExistsTest.java
+    ├── bss-launch
+    ├── pom.xml
+    └── runFedora.sh
 
-**The command to compile the code on a Ubuntu-based machine:**
+```
 
-    $ source bss-launch --install
-
-**The command to compile the code on a Fedora-based machine:**
-
-    $ ./runFedora.sh --install
-
-## How to run the code
-
-### BootStrap Node
-
-It is important to understand that for the system to function properly it is necessary to have a set of BootStrap Nodes to which the regular nodes will connect to interact with the system and know its state. So these are the nodes that must be connected first.
-
-Therefore...
-
-**The command to run the program on a Ubuntu-based machine for the BootStrap Node:**
- 
-    $ source bss-launch --bssNode BootStrapNode0    #In which 0 can be 0-3
-
-**The command to run the program on a Fedora-based machine for the BootStrap Node:**
-
-    $ ./runFedora.sh --bssNode BootStrapNode0    #In which 0 can be 0-3
-
-### Storage Peers
-
-For the storage peers the command is a little bit different.
-
-**The command to run the program on a Ubuntu-based machine for Storage Peers:**
-
-    $ source bss-launch --storagePeer nodeID  
-    
-    #If nodeID is empty, a new node is created, if it is not the system will launch the node with that nodeID
-
-**The command to run the program on a Fedora-based machine for Storage Peers:**
-    
-    $ ./runFedora.sh --storagePeer nodeID  
-    
-    #If nodeID is empty, a new node is created, if it is not the system will launch the node with that nodeID
-
-### Readers 
-
-For readers we do the following:
-
-**The command to run the program on a Ubuntu-based machine for Readers:**
-
-     $ source bss-launch get-shared ownerID/file_key
-     
-     # In which ownerID and file_key is shared with the reader by a storage peer
-
-**The command to run the program on a Fedora-based machine for Readers:**
-
-     $ ./runFedora.sh get-shared ownderID/file_key
-     
-     # In which ownerID and file_key is shared with the reader by a storage peer
-
-## Example of system usage with images
+* [Return to Index](#index)
 
