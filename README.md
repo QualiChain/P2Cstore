@@ -70,19 +70,27 @@ By simple adding a #, as such:
 
 There are also a few auxiliary operations available, below we will describe how to find them.
 
-## Compile
+## Compile and clean up
 
 As previously stated the present demonstration is for Linux computers, namely Ubuntu-based Linux and Fedora-based Linux.
 
 The examples provided are for these operating systems because the code was developed in a Ubuntu-based environment and it was tested on a Fedora-based environment.
 
-**The command to compile the code on a Ubuntu-based machine:**
+**Compile the code on a Ubuntu-based machine:**
 
     $ source bss-launch --install
 
-**The command to compile the code on a Fedora-based machine:**
+**Compile the code on a Fedora-based machine:**
 
     $ ./runFedora.sh --install
+    
+**Clean up the code on a Ubuntu-based machine:**
+
+    $ source bss-launch --clean
+
+**Clean up code on a Fedora-based machine:**
+
+    $ ./runFedora.sh --clean    
 
 ## Run
 
@@ -92,11 +100,11 @@ It is important to understand that for the system to function properly it is nec
 
 Therefore...
 
-**The command to run the program on a Ubuntu-based machine for the BootStrap Node:**
+**Run the code on a Ubuntu-based machine for the BootStrap Node:**
  
     $ source bss-launch --bssNode BootStrapNode0    #In which 0 can be 0-3
 
-**The command to run the program on a Fedora-based machine for the BootStrap Node:**
+**Run the code on a Fedora-based machine for the BootStrap Node:**
 
     $ ./runFedora.sh --bssNode BootStrapNode0    #In which 0 can be 0-3
 
