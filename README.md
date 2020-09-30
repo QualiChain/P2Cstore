@@ -68,7 +68,7 @@ By simple adding a #, as such:
 * **Delete operation** - Storage peers can delete content from the system using this operation.
 * **Update operation** - Storage peers can update content from the system using this operation.
 
-There are also a few auxiliary operations available, to find them one simply has to type help and click Enter and a list with all the operations is displayed.
+There are also a few auxiliary operations available, to find them one simply has to type **help** on the program terminal and click Enter and a list with all the operations is displayed.
 
 * [Return to Index](#index)
 
