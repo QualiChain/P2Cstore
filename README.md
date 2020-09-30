@@ -7,7 +7,7 @@
 [logo]: https://web.ist.utl.pt/~ist180970/assets/img/qualichain-logo.png
 A Storage System for the Qualichain Portuguese PoC. The Qualichain Portuguese PoC is about the interaction between a higher education organization, IST (or Técnico Lisboa), and a recruiting organization, AMA. A full version of the PoC source code is provided in another repository (https://github.com/QualiChain/consortium). 
 
-This repository presents a storage system for the blockchain. This system can work paralely to the blockchain storing files that are added through transactions on the blockchain and stored here.
+This repository presents a storage system for the blockchain. This system can work paralely to the blockchain. It works by storing files that are added through transactions on the blockchain.
 
 ## Index:
 - [System Requirements](#system-requirements)
