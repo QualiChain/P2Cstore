@@ -34,6 +34,7 @@ It is important that the system has 512MB of RAM or more.
 ## Setup
 
 1. To be able to connect to the network one has to have the inet ip enable on the machine.
+
 To achieve that perform the following steps:
 
     $ sudo nano /etc/hosts
@@ -152,6 +153,6 @@ Thank you very much for your Kademlia DHT open source project.
 
 ## License
 
-[License: MIT](#https://opensource.org/licenses/MIT)
+[License: MIT](https://opensource.org/licenses/MIT)
 
 * [Return to Index](#index)
