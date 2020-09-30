@@ -70,6 +70,8 @@ By simple adding a #, as such:
 
 There are also a few auxiliary operations available, to find them one simply has to type help and click Enter and a list with all the operations is displayed.
 
+* [Return to Index](#index)
+
 ## Compile and clean up
 
 As previously stated the present demonstration is for Linux computers, namely Ubuntu-based Linux and Fedora-based Linux.
@@ -91,6 +93,8 @@ The examples provided are for these operating systems because the code was devel
 **Clean up code on a Fedora-based machine:**
 
     $ ./runFedora.sh --clean    
+
+* [Return to Index](#index)
 
 ## Run
 
@@ -140,6 +144,7 @@ For readers we do the following:
      
      # In which ownerID and file_key is shared with the reader by a storage peer
 
+* [Return to Index](#index)
 
 ## Credits
 
