@@ -17,14 +17,6 @@
 
 There are also a few auxiliary operations available, below we will describe how to find them.
 
-## System Requirements
-
-The system must have Java 1.8 installed and maven to be able to run the code.
-
-The operating system supported for the given examples is Linux. However, considering that the only thing necessary to run the program is Java and Maven it should work on Windows and macOS.
-
-It is important that the system has 512MB of RAM or more.
-
 ## How to compile the code
 
 As previously stated the present demonstration is for Linux computers, namely Ubuntu-based Linux and Fedora-based Linux.
