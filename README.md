@@ -5,9 +5,9 @@
 ![web][logo]
 
 [logo]: https://web.ist.utl.pt/~ist180970/assets/img/qualichain-logo.png
-A webapp for the Qualichain Portuguese PoC. The Qualichain Portuguese PoC is about the interaction between a higher education organization, IST (or Técnico Lisboa), and a recruiting organization, AMA. A full version of the PoC source code is provided in another repository (https://github.com/QualiChain/consortium). 
+A Storage System for the Qualichain Portuguese PoC. The Qualichain Portuguese PoC is about the interaction between a higher education organization, IST (or Técnico Lisboa), and a recruiting organization, AMA. A full version of the PoC source code is provided in another repository (https://github.com/QualiChain/consortium). 
 
-This repository presents an alternative app to be executed by a recruiting organization. The difference is that the Recruiting Module of the other repository is a standalone app that has to be installed before executed, whereas the Recruiting Webapp is, as the name suggests, a web application. 
+This repository presents a storage system for the blockchain. This system can work paralely to the blockchain storing files that are added through transactions on the blockchain and stored here.
 
 ## Index:
 - [System Requirements](#system-requirements)
