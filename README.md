@@ -49,7 +49,7 @@ By simple adding a #, as such:
 
 2. Fork and clone the projcet
 
-3. In case one wants to use clouds it has to [Configure AWS S3 and Configure GCP](https://github.com/QualiChain/P2Cstore/Auxiliar-P2Cstore-Setup.md). Afterwards it is necessary to add the credentials to the Resources/config.properties file on the project.
+3. In case one wants to use clouds it has to [Configure AWS S3 and Configure GCP](https://github.com/QualiChain/P2Cstore/blob/master/Auxiliar-P2Cstore-Setup.md). Afterwards it is necessary to add the credentials to the Resources/config.properties file on the project.
 
 * [Return to Index](#index)
 
