@@ -5,9 +5,7 @@
 ![web][logo]
 
 [logo]: https://web.ist.utl.pt/~ist180970/assets/img/qualichain-logo.png
-A Storage System for the Qualichain Portuguese PoC. The Qualichain Portuguese PoC is about the interaction between a higher education organization, IST (or Técnico Lisboa), and a recruiting organization, AMA. A full version of the PoC source code is provided in another repository (https://github.com/QualiChain/consortium). 
-
-This repository presents a storage system for the blockchain. This system can work paralely to the blockchain. It works by storing files that are added through transactions on the blockchain.
+A distribulted file storage system for Qualichain. The system is both peer-to-peer and cloud-backed. It can work in parallel to a blockchain, for storing files that are added through transactions on the blockchain. Nevertheless, other uses are possible. 
 
 ## Index:
 - [System Requirements](#system-requirements)
@@ -55,20 +53,20 @@ By simple adding a #, as such:
 
 ## On P2Cstore
 
-### It is important to first know and understand which are the system participants:
+### The system participants are the following:
 
 * **The Storage peers** - Nodes that store content from other nodes and participate in the routing algorithm. Storage peers can perform all the operations on the system.
 * **The Readers** - Nodes that do not store content from other nodes nor have to give storage space to the system. This type of participant can only read from the system.
 * **Cloud providers** - Comercial cloud providers like AWS and GCP.
 
-### Now we will describe what are the main operations available:
+### The main operations supported are:
 
 * **Add operation** - Storage peers can add content to the system using this operation.
 * **Get operation** - Storage peers and Readers can read content from the system using this operation.
 * **Delete operation** - Storage peers can delete content from the system using this operation.
 * **Update operation** - Storage peers can update content from the system using this operation.
 
-There are also a few auxiliary operations available, to find them one simply has to type **help** on the program terminal and click Enter and a list with all the operations is displayed.
+There are also a few auxiliary operations available. To learn about them one simply has to type **help** on the program terminal and click Enter and a list with all the operations is displayed.
 
 * [Return to Index](#index)
 
@@ -100,7 +98,7 @@ The examples provided are for these operating systems because the code was devel
 
 ### BootStrap Node
 
-It is important to understand that for the system to function properly it is necessary to have a set of BootStrap Nodes to which the regular nodes will connect to interact with the system and know its state. So these are the nodes that must be connected first.
+For the system to function properly it is necessary to have a set of BootStrap Nodes to which the regular nodes will connect to interact with the system and know its state. Therefore, these are the nodes that must be connected first.
 
 Therefore...
 
