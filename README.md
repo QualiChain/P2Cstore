@@ -10,7 +10,7 @@ A webapp for the Qualichain Portuguese PoC. The Qualichain Portuguese PoC is abo
 This repository presents an alternative app to be executed by a recruiting organization. The difference is that the Recruiting Module of the other repository is a standalone app that has to be installed before executed, whereas the Recruiting Webapp is, as the name suggests, a web application. 
 
 ## Index:
-- [Requirements](#requirements)
+- [System Requirements](#system-requirements)
 - [Configurations](#configurations)
 - [User Guide](#user-guide)
 - [Configure AWS S3](#configure-aws-s3)
@@ -23,10 +23,14 @@ This repository presents an alternative app to be executed by a recruiting organ
 P2Cstore works on Linux and macOS<br>
 If something doesn’t work, please [file an issue](https://github.com/QualiChain/P2Cstore/issues/new).<br>
 
-## Requirements
+## System Requirements
 * Git
 * Java 1.8
 * Maven
+
+The operating system supported for the given examples is Linux. However, considering that the only thing necessary to run the program is Java and Maven it should work on Windows and macOS.
+
+It is important that the system has 512MB of RAM or more.
 
 ## Configurations
 
