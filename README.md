@@ -153,6 +153,6 @@ Thank you very much for your Kademlia DHT open source project.
 
 ## License
 
-[License: MIT](https://opensource.org/licenses/MIT)
+[License: MIT](https://github.com/QualiChain/P2Cstore/blob/master/LICENSE.md)
 
 * [Return to Index](#index)
