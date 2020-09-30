@@ -5,7 +5,8 @@
 ![web][logo]
 
 [logo]: https://web.ist.utl.pt/~ist180970/assets/img/qualichain-logo.png
-A distribulted file storage system for Qualichain. The system is both peer-to-peer and cloud-backed. It can work in parallel to a blockchain, for storing files that are added through transactions on the blockchain. Nevertheless, other uses are possible. 
+A distribulted file storage system for Qualichain. P2Cstore supports both peer-to-peer and cloud-backed storage. 
+Among other use cases, P2Cstore can work in parallel to a blockchain for storing files that are added through transactions on the blockchain. 
 
 ## Index:
 - [System Requirements](#system-requirements)
@@ -17,17 +18,15 @@ A distribulted file storage system for Qualichain. The system is both peer-to-pe
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
 
-P2Cstore works on Linux and macOS<br>
+P2Cstore has been developed for Linux but considering that the only thing necessary to run the program is Java and Maven it should work on Windows and macOS too <br>
 If something doesn’t work, please [file an issue](https://github.com/QualiChain/P2Cstore/issues/new).<br>
 
 ## System Requirements
 * Git
 * Java 1.8
 * Maven
+* At least 512MB of RAM
 
-The operating system supported for the given examples is Linux. However, considering that the only thing necessary to run the program is Java and Maven it should work on Windows and macOS.
-
-It is important that the system has 512MB of RAM or more.
 
 ## Setup
 
