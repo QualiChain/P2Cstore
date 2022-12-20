@@ -151,7 +151,7 @@ The continuous development of this project is what makes it alive and it is only
 
 ## Acknowledgements
 
-This work was initially developed in the scope of the master's thesis of [@MarceloFRSilva](https://github.com/MarceloFRSilva) who developed the first version of this work.
+This work was initially developed in the scope of the master's thesis of [@MarceloFRSilva](https://github.com/MRegra) who developed the first version of this work.
 
 We are grateful to the authors of existing related projects used in the development of this one:
 
